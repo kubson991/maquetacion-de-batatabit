@@ -1,0 +1,34 @@
+/* 
+ 
+font-family: 'Inter', sans-serif; 
+*/
+
+/* 
+1.Posicionamiento
+2.modelo de caja
+3.Tipografia
+4.Visuales
+5.otros
+*/
+
+:root{
+    /*colores*/
+    --bitcoin-orange:#F7931A;
+    --soft-orange:#FFE9D5;
+    --secondary-blue:#1A9AF7;
+    --soft-blue:#E7F5FF;
+    --warm-black:#201E1C;
+    --warm-black1:#282623;
+    --off-white:#FAF8F7;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;  
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+    font-family:'DM Sans', sans-serif ;
+}
