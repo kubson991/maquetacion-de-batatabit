@@ -24,7 +24,7 @@ function cambiarAcomisiones(){
     <div class="tasas-de-cambio__actualizacion comisiones"><b>Actualizado:</b><p> 19 Julio 23:48</p></div>`
 }
 
- function cambiarAmonedas(){
+function cambiarAmonedas(){
     tabla.innerHTML= 
      `<h4 class="conversion-de-moneda__titulomoneda">Monedas</h4>
      <table>
