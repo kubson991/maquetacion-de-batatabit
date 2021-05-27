@@ -162,14 +162,20 @@ main{
 
 }
 
-.tasas-de-cambio__conversion-de-moneda .conversion-de-moneda__titulomoneda{
+.tasas-de-cambio__conversion-de-moneda .conversion-de-moneda__titulomoneda,.conversion-de-moneda__tituloComisiones{
     width: 81px;
     height: 23px;
-    padding-left: 20px;
+    padding-left: 12px;
+    font-family: 'Inter', sans-serif; 
+    font-style: normal;
     font-weight: bold;
     font-size: 1.8rem;
     line-height: 2.3rem;
     color: var(--bitcoin-orange);
+}
+
+.tasas-de-cambio__conversion-de-moneda .conversion-de-moneda__tituloComisiones{
+    color: var(--secondary-blue);
 }
 
 .tasas-de-cambio__conversion-de-moneda table{
@@ -216,16 +222,22 @@ main{
     display: inline-block; 
     width: 24px;
     height: 24px;
-    right: -20%;
     top:calc(50% - 12px); 
     border: none; 
-    background-image: url("../assets/icons/right-arrow.svg");
     background-position: center;
     background-repeat: no-repeat;
-    background-color: #faf8f7;
-     
-     
-    
+    background-color: #faf8f7;   
+}
+
+.derecha{
+    right: -20%;
+    background-image: url("../assets/icons/right-arrow.svg");
+}
+
+.izquierda{
+    left: -20%;
+    background-image: url("../assets/icons/right-arrow.svg");
+    transform: rotate(180deg);
 }
 
 .tasas-de-cambio__actualizacion{
@@ -243,6 +255,10 @@ main{
     background-color: var(--soft-orange);
     border-radius: 8px;    
     justify-content: center;
+}
+
+.comisiones{
+    background-color: var(--soft-blue);
 }
 
 .tasas-de-cambio__actualizacion p{
