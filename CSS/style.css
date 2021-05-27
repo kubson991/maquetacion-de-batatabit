@@ -10,7 +10,6 @@ font-family: 'Inter', sans-serif;
 4.Visuales
 5.otros
 */
-
 :root{
     /*colores*/
     --bitcoin-orange:#F7931A;
@@ -21,18 +20,15 @@ font-family: 'Inter', sans-serif;
     --warm-black1:#282623;
     --off-white:#FAF8F7;
 }
-
 *{
     box-sizing: border-box;
     padding: 0;  
     margin: 0;
 }
-
 html{
     font-size: 62.5%;
     font-family:'DM Sans', sans-serif ;
 }
-
 header{
     position: relative;
     display: flex;
@@ -43,14 +39,12 @@ header{
     text-align: center;
     background:linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);;
 }
-
 header img{
     width: 150px;
     height: 24px;
     margin-top: 60px;
    
 }
-
 .header__title-container{
     width: 90%;
     min-width: 288px;
@@ -59,7 +53,6 @@ header img{
     margin-top: 40px;
     
 }
-
 .header__title-container h1{
     font-size: 2.4rem;
     font-weight: bold;
@@ -67,7 +60,6 @@ header img{
     line-height: 2.6rem;
 
 }
-
 .header__title-container p{
     margin-top: 24px;
     font-size: 1.4rem;
@@ -76,11 +68,11 @@ header img{
     color:var(--soft-orange)
 
 }
-
 .header__button{
     position: absolute;
     top: calc(100% - 24px);
     left: calc(50% - 110px);
+    z-index: 1;
     width: 229px;
     height: 48px;
     padding: 15px;
@@ -94,7 +86,6 @@ header img{
     border-radius: 4px;
     border: none;
 }
-
 .header__title-container .header__button span{
     display:inline-block;
     margin-left: 13px;
@@ -102,14 +93,13 @@ header img{
     height: 8px;
     background-image:url("../assets/icons/down-arrow.svg");
 }
-
 main{
     width: 100%;
     height: auto;
 
 }
-
 .tasas-de-cambio{
+    position: relative;
     width: 100%;
     height:auto;
     padding-top: 59px;
@@ -121,13 +111,11 @@ main{
 
 
 }
-
 .tasas-de-cambio__bitcoin{
     height: 195px;
     width: 195px;
     
 }
-
 .tasas-de-cambio__tittle{
     width: 90%;
     min-width: 288px;
@@ -139,7 +127,6 @@ main{
     font-size: 2.4rem;
     line-height: 2.6rem;
 }
-
 .tasas-de-cambio__p{
     width:90%;
     min-width: 288px;
@@ -152,43 +139,36 @@ main{
     color: grey;
     text-align: center;
 }
-
 .tasas-de-cambio__conversion-de-moneda{
     position: relative;
-    width: 60%;
+    width: 70%;
     margin-top: 48px;
     height: auto;
     margin-bottom: 65px;
 
 }
-
 .tasas-de-cambio__conversion-de-moneda .conversion-de-moneda__titulomoneda,.conversion-de-moneda__tituloComisiones{
     width: 81px;
     height: 23px;
-    padding-left: 12px;
-    font-family: 'Inter', sans-serif; 
+    font-family: 'DM sans', sans-serif; 
     font-style: normal;
     font-weight: bold;
     font-size: 1.8rem;
     line-height: 2.3rem;
     color: var(--bitcoin-orange);
 }
-
 .tasas-de-cambio__conversion-de-moneda .conversion-de-moneda__tituloComisiones{
     color: var(--secondary-blue);
 }
-
 .tasas-de-cambio__conversion-de-moneda table{
     width: 100%;
     margin-top: 22px;
     border-radius: 1rem;
 }
-
 .tasas-de-cambio__conversion-de-moneda table td{
- 
     width:50%;
     height: 40px;
-    font-family: 'Inter', sans-serif; 
+    font-family: 'DM sans', sans-serif; 
     text-align: center;
     font-weight: 500;
     font-size: 1.6rem;
@@ -197,7 +177,6 @@ main{
     background-color: white;
     
 }
-
 .conversion-de-moneda__decrecimientoTabla,.conversion-de-moneda__crecimientoTabla{
     padding-left: 1rem;
     padding-right: 1.3rem;
@@ -208,38 +187,32 @@ main{
     background-repeat: no-repeat;
     background-size: contain;
 }
-
 .conversion-de-moneda__decrecimientoTabla{
     background-image: url(../assets/icons/trending-down.svg);
 }
-
 .conversion-de-moneda__crecimientoTabla{
     background-image: url(../assets/icons/trending-up.svg);    
 }
-
 .conversion-de-moneda__botonTabla{
     position: absolute; 
     display: inline-block; 
     width: 24px;
     height: 24px;
-    top:calc(50% - 12px); 
+    top: calc(50% - 12px);
     border: none; 
     background-position: center;
     background-repeat: no-repeat;
     background-color: #faf8f7;   
 }
-
 .derecha{
     right: -20%;
     background-image: url("../assets/icons/right-arrow.svg");
 }
-
 .izquierda{
     left: -20%;
     background-image: url("../assets/icons/right-arrow.svg");
     transform: rotate(180deg);
 }
-
 .tasas-de-cambio__actualizacion{
     display: flex;
     margin-top: 24px;
@@ -256,19 +229,107 @@ main{
     border-radius: 8px;    
     justify-content: center;
 }
-
 .comisiones{
     background-color: var(--soft-blue);
 }
-
 .tasas-de-cambio__actualizacion p{
     display: inline-block;
     font-family: 'Inter', sans-serif; 
     font-size: 1.2rem;
     line-height: 1.5rem;     
 }
-
-.unset{
-    display: none;
+.batataIcon{
+    position: absolute;
+    bottom:-12px;
+    width: 37px;
+    height: 24px;
 }
- 
+.main__cardSection{
+    width: 100%;
+    height: auto;
+    padding-top:70px ;
+    padding-bottom: 48px;
+    font-family:'DM sans', sans-serif ;
+    color:white;
+    background-color: var(--warm-black);
+
+}
+
+.cardContainer__tittle{
+    text-align: center;
+    font-weight:600;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+}
+
+.cardContainer__p{
+    margin-top: 24px;
+    margin-bottom: 12px;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: #808080;
+}
+
+.tarjetSection__cardContainer{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card{
+    width: 100%;
+    max-width: 400px;
+    height: 152px;
+    margin-top: 16px;
+    border-radius: 7px;
+    background-color: var(--warm-black1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+}
+.card__icon{
+    margin-left: 18px;
+    margin-top: 16px;
+    width: 24px;
+    height: 24px;
+}
+.card h3{
+    margin-top: 10px;
+    margin-left: 16px;
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+}
+
+.card p{
+    width: 90%;
+    margin-top: 10px;
+    margin-left: 16px;
+    margin-bottom: 22px;
+    margin-right: auto;
+    color:#808080;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    
+}
+
+.main__imageContainer{
+    width: 100%;    
+    height: 516px;
+    background-image: url("../assets/img/bitcoinbaby2x.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;  
+}
+
+.main__imageContainer h1{
+    padding-top:90px;
+    color: white;
+    font-family:'DM sans', sans-serif ;
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    text-align: center;
+}
