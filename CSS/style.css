@@ -29,6 +29,10 @@ html{
     font-size: 62.5%;
     font-family:'DM Sans', sans-serif ;
 }
+
+body{
+    min-width: 320px;
+}
 header{
     position: relative;
     display: flex;
@@ -50,7 +54,6 @@ header img{
 .header__title-container{
     width: 90%;
     min-width: 288px;
-    max-width: 900px;
     height: 218px;
     margin-top: 40px;
     
@@ -122,7 +125,6 @@ main{
 .tasas-de-cambio__tittle{
     width: 90%;
     min-width: 288px;
-    max-width: 900px;
     height: 52px;
     margin-top: 40px;
     text-align:center;
@@ -165,7 +167,8 @@ main{
 }
 .tasas-de-cambio__conversion-de-moneda table{
     width: 100%;
-    margin-top: 22px;
+    max-width: 650px;
+    margin: 22px auto 0 auto;
     border-radius: 1rem;
 }
 .tasas-de-cambio__conversion-de-moneda table td{
@@ -208,11 +211,11 @@ main{
     background-color: #faf8f7;   
 }
 .derecha{
-    right: -20%;
+    right: -50px;
     background-image: url("../assets/icons/right-arrow.svg");
 }
 .izquierda{
-    left: -20%;
+    left: -50px;
     background-image: url("../assets/icons/right-arrow.svg");
     transform: rotate(180deg);
 }
@@ -266,11 +269,13 @@ main{
 }
 
 .cardContainer__p{
+    width: 100%;
     margin-top: 24px;
     margin-bottom: 12px;
     font-weight: 500;
     font-size: 1.4rem;
     line-height: 1.8rem;
+    text-align: center;
     color: #808080;
 }
 
@@ -325,6 +330,7 @@ main{
     background-position: center;
     background-repeat: no-repeat;
     background-size:cover;  
+    background-attachment:fixed;
 }
 
 .main__imageContainer h1{
@@ -384,7 +390,6 @@ main{
 
 .plans__cards{
     position: relative;
-    scroll-snap-align: center;
     width: 70%;
     min-width: 210px;
     max-width: 300px;
@@ -412,9 +417,9 @@ main{
     color: white;
     border-radius: 8px;
 }
-
 .recomendado{
-    background-color: var(--bitcoin-orange);}
+    background-color: var(--bitcoin-orange);
+}
 .diario{
     background-color: var(--secondary-blue);    
 }
@@ -427,7 +432,6 @@ main{
     font-size: 1.4rem;
     line-height: 1.8rem;
 }
-
 .cards__precio{
     display: flex;
     width: 100%;

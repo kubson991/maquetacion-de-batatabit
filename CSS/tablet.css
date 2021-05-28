@@ -1,0 +1,10 @@
+.plans__slideContainer{
+    justify-content:space-evenly;   
+}
+.tarjetSection__cardContainer{
+    justify-content:space-around;   
+}
+.card{
+    margin-top:60px ;
+}
+ 
