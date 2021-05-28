@@ -488,7 +488,7 @@ footer{
     min-width:300px;
     height: 150px;
     display: flex;
-    justify-content: space-around;  
+    justify-content:space-between; 
     align-items: center;
     background-color: var(--bitcoin-orange);  
 }
@@ -496,12 +496,15 @@ footer{
 footer .links__container{
     width: 30%;
     height: 50%;
+    margin: 0 30px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
+
 
 }
 footer .links__container a{
+    font-family:'DM Sans', sans-serif ;
     font-weight: 500;
     font-size: 1.4rem;
     line-height: 1.8rem;
@@ -512,4 +515,5 @@ footer .links__container a{
 footer img{
     width: 77px;
     height: 60px;
+    margin: 0 30px;
 }
