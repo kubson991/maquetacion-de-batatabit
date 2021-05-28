@@ -31,7 +31,7 @@ html{
 }
 
 body{
-    min-width: 320px;
+    min-width: 310px;
 }
 header{
     position: relative;
@@ -141,7 +141,7 @@ main{
     font-weight:500;
     font-size:1.4rem;
     line-height:1.8rem;
-    color: grey;
+    color: #757575;
     text-align: center;
 }
 .tasas-de-cambio__conversion-de-moneda{
@@ -170,6 +170,7 @@ main{
     max-width: 650px;
     margin: 22px auto 0 auto;
     border-radius: 1rem;
+    
 }
 .tasas-de-cambio__conversion-de-moneda table td{
     width:50%;
@@ -179,7 +180,7 @@ main{
     font-weight: 500;
     font-size: 1.6rem;
     line-height: 1.9rem;
-    color: #B5B0AC;
+    color: #757575;
     background-color: white;
     
 }
@@ -380,8 +381,9 @@ main{
     width: 100%;
     height: 300px;
     display: flex;
-    padding-top:30px ;
+    padding-top:30px ; 
     overflow-x: scroll;
+    overflow-y: hidden;
     overscroll-behavior-x: contain;
     scroll-snap-type:x mandatory ;
     gap:10px ;

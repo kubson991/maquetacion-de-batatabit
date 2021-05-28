@@ -45,7 +45,7 @@ function cambiarAmonedas(){
              <td>$ 4.96 <span class="conversion-de-moneda__decrecimientoTabla"></span></td>
            </tr>
      </table>
-     <button class="conversion-de-moneda__botonTabla derecha" onclick="cambiarAcomisiones()"></button>
+     <button class="conversion-de-moneda__botonTabla derecha" onclick="cambiarAcomisiones()" title="ver tabla de moneda"></button>
      <div class="tasas-de-cambio__actualizacion"><b>Actualizado:</b><p> 19 Julio 23:45</p></div>`
 
 }
